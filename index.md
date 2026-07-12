@@ -8,15 +8,12 @@ title: Matizhill em 11ty
   .container-index {
     display: flex;
     align-items: flex-start;
-    gap: 30px; /* Espaço entre a imagem e o texto */
   }
 
   /* Estiliza a imagem */
   .imagem-interativa {
     width: 300px; /* Ajuste o tamanho da imagem aqui */
-    border-radius: 8px;
     cursor: pointer; /* Muda o mouse para uma "mãozinha" */
-    transition: transform 0.2s; /* Animação suave */
   }
 
 </style>
@@ -26,7 +23,6 @@ title: Matizhill em 11ty
     src="img/Ei-tem nada aqui.png" 
     id="imagem-troca" 
     class="imagem-interativa" 
-    alt="Clique para ver o processo"
   >
 
   <div class="texto-index">
@@ -34,6 +30,8 @@ title: Matizhill em 11ty
     <p>O que eu fiz só foi fazer o Eleventy funcionar com o Github Page. Uma ferramenta muito útil que pega os arquivos markdowns e gera páginas em html completas e personalizadas. Enquanto isso, não caçoem de mim!</p>
   </div>
 </div>
+
+<a href="traducoes" style="font-size: 20px;"><b>Listagem de Tradução</b></a>
 
 <script>
   // Coloque aqui o caminho das imagens na ordem que você desejar
