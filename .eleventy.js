@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("traducoes/**/*.{jpg,jpeg,png,gif}");
     
     return {
+        pathPrefix: "/matizhill-website/", // NÃO esqueça de remover o prefixo quando o site for usar dominio oficial do site. Mantenha para testes publicos até que o site esteja pronto.
         dir: {
             input: ".",
             output: "_site"

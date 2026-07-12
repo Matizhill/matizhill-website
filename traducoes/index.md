@@ -10,7 +10,7 @@ Cada págia aqui é um markdown (.md) que está presente no repositório e ele �
 <ul>
 {% for item in collections.traducoes %}
     <li>
-        <a href="{{ item.url }}">{{ item.data.title }}</a>
+        <a href="{{ item.url| url }}">{{ item.data.title }}</a>
     </li>
 {% endfor %}
 </ul>
