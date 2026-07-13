@@ -15,23 +15,7 @@ title: Matizhill em 11ty
     width: 300px; /* Ajuste o tamanho da imagem aqui */
     cursor: pointer; /* Muda o mouse para uma "mãozinha" */
   }
-
 </style>
-
-<div class="container-index">
-  <img 
-    src="img/Ei-tem nada aqui.png" 
-    id="imagem-troca" 
-    class="imagem-interativa" 
-  >
-
-  <div class="texto-index">
-    <h1>CAAALMA AÍ!</h1>
-    <p>O que eu fiz só foi fazer o Eleventy funcionar com o Github Page. Uma ferramenta muito útil que pega os arquivos markdowns e gera páginas em html completas e personalizadas. Enquanto isso, não caçoem de mim!</p>
-  </div>
-</div>
-
-<a href="traducoes" style="font-size: 20px;"><b>Listagem de Tradução</b></a>
 
 <script>
   // Coloque aqui o caminho das imagens na ordem que você desejar
@@ -52,3 +36,45 @@ title: Matizhill em 11ty
     elementoImagem.src = listaDeImagens[indiceAtual];
   });
 </script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+
+{% comment %}
+O SITE COMEÇA AQUI
+{% endcomment %}
+
+
+<div class="container-index">
+  <img src="img/Ei-tem nada aqui.png" id="imagem-troca" class="imagem-interativa">
+
+  <div class="texto-index">
+    <h1>CAAALMA AÍ!</h1>
+    <p>O que eu fiz só foi fazer o Eleventy funcionar com o Github Page. Uma ferramenta muito útil que pega os arquivos markdowns e gera páginas em html completas e personalizadas. Enquanto isso, não caçoem de mim!</p>
+  </div>
+</div>
+
+<a href="traducoes" style="font-size: 20px;">
+  <b>Listagem de Tradução</b>
+</a>
+
+<br>
+
+<a href="sobre" style="font-size: 20px;">
+  <b>Sobre nos</b>
+</a>
+
+<center>
+<model-viewer src="models/mh_logo_3d.glb"
+  camera-controls
+  disable-zoom
+  disable-pan
+  environment-image="legacy"
+  interaction-prompt="none"
+  camera-orbit="0deg 90deg 50%"
+  field-of-view="5deg"
+  style="width: 100%; height: 800px; margin-top: -150px">
+</model-viewer>
+
+
+## Impressionante logo
+</center>
