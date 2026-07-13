@@ -17,6 +17,25 @@ title: Matizhill em 11ty
   }
 </style>
 
+
+
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+
+{% comment %}
+O SITE COMEÇA AQUI
+{% endcomment %}
+
+
+<div class="container-index" style="position: relative; z-index: 10">
+  <img src="img/Ei-tem nada aqui.png" id="imagem-troca" class="imagem-interativa">
+
+  <div class="texto-index">
+    <h1>CAAALMA AÍ!</h1>
+    <p>O que eu fiz só foi fazer o Eleventy funcionar com o Github Page. Uma ferramenta muito útil que pega os arquivos markdowns e gera páginas em html completas e personalizadas. Enquanto isso, não caçoem de mim!</p>
+  </div>
+</div>
+
 <script>
   // Coloque aqui o caminho das imagens na ordem que você desejar
   const listaDeImagens = [
@@ -36,30 +55,14 @@ title: Matizhill em 11ty
     elementoImagem.src = listaDeImagens[indiceAtual];
   });
 </script>
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 
-
-{% comment %}
-O SITE COMEÇA AQUI
-{% endcomment %}
-
-
-<div class="container-index">
-  <img src="img/Ei-tem nada aqui.png" id="imagem-troca" class="imagem-interativa">
-
-  <div class="texto-index">
-    <h1>CAAALMA AÍ!</h1>
-    <p>O que eu fiz só foi fazer o Eleventy funcionar com o Github Page. Uma ferramenta muito útil que pega os arquivos markdowns e gera páginas em html completas e personalizadas. Enquanto isso, não caçoem de mim!</p>
-  </div>
-</div>
-
-<a href="traducoes" style="font-size: 20px;">
+<a href="traducoes" style="font-size: 20px; position: relative; z-index: 10">
   <b>Listagem de Tradução</b>
 </a>
 
 <br>
 
-<a href="sobre" style="font-size: 20px;">
+<a href="sobre" style="font-size: 20px; position: relative; z-index: 10">
   <b>Sobre nos</b>
 </a>
 
@@ -68,13 +71,13 @@ O SITE COMEÇA AQUI
   camera-controls
   disable-zoom
   disable-pan
-  environment-image="legacy"
   interaction-prompt="none"
   camera-orbit="0deg 90deg 50%"
   field-of-view="5deg"
-  style="width: 100%; height: 800px; margin-top: -150px">
+  style="width: 100%; height: 800px; margin-top: -150px; margin-bottom: -150px; position: relative; z-index: 0;">
 </model-viewer>
 
 
-## Impressionante logo
+<h2 style="position: relative; z-index: 10; text-shadow:
+    3px 3px 0 #fff,-3px 3px 0 #fff,-3px -3px 0 #fff,3px -3px 0 #fff;">Impressionante logo</h2>
 </center>
