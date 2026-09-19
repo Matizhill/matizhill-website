@@ -1,0 +1,39 @@
+---
+layout: layout.njk
+title: Blog Matizhill
+permalink: /blog/
+---
+
+<h1>Blog</h1>
+
+<!-- Links para os arquivos RSS que você acabou de criar -->
+<div style="margin-bottom: 20px;">
+  <b>Assine nosso feed:</b>
+  <a href="{{ 'feed.xml' | url }}">Português</a> | 
+  <a href="{{ 'feed-en.xml' | url }}">Inglês</a> | 
+  <a href="{{ 'feed-all.xml' | url }}">Todos</a>
+</div>
+
+<ul>
+  {# 1. Filtramos apenas os posts em português para esta página #}
+  {# 2. Usamos 'reverse' para que as postagens mais recentes fiquem no topo #}
+  {% set posts = collections.post | locale_filter("pt-br") | reverse %}
+  
+  {% for post in posts %}
+    <li style="margin-bottom: 10px;">
+      <!-- O filtro | url garante que o caminho funcione corretamente no GitHub Pages -->
+      <a href="{{ post.url | url }}" style="font-size: 18px; font-weight: bold;">
+        {{ post.data.title }}
+      </a>
+      
+      <br>
+      
+      <!-- Mostra o autor do arquivo Markdown, ou o global como fallback -->
+      <small>
+        Por: {{ post.data.author | default(metadata.author.name) }}
+      </small>
+    </li>
+  {% else %}
+    <li>Nenhuma postagem encontrada.</li>
+  {% endfor %}
+</ul>

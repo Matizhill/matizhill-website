@@ -71,6 +71,7 @@ O SITE COMEÇA AQUI
   camera-controls
   disable-zoom
   disable-pan
+  auto-rotate
   interaction-prompt="none"
   camera-orbit="0deg 90deg 50%"
   field-of-view="5deg"
@@ -79,5 +80,7 @@ O SITE COMEÇA AQUI
 
 
 <h2 style="position: relative; z-index: 10; text-shadow:
-    3px 3px 0 #fff,-3px 3px 0 #fff,-3px -3px 0 #fff,3px -3px 0 #fff;">Impressionante logo</h2>
+    3px 3px 0 #fff,-3px 3px 0 #fff,-3px -3px 0 #fff,
+3px -3px 0 #fff;">Impressionante logo TriDimensional
+</h2>
 </center>
